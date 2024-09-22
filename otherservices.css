@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    /* 1 */
+    line-height: inherit;
+    /* 2 */
+  
+    
+      padding: 0;
+      background-image: url('https://sawelalodges.com/images/gallery/gallery8.jpg');
+      background-size: cover; /* Ensure the image covers the entire viewport */
+      background-position: center center; /* Center the image */
+      background-attachment: fixed; /* Keep the image fixed during scrolling */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+      font-family: 'Poppins', sans-serif; /* Optional: Set a default font */
+  }
+  /*
+  1. Add the correct height in Firefox.
+  2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+  3. Ensure horizontal rules are visible by default.
+  */
+  
+  .image-roll-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .image-roll-container img {
+    height: 230px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop image to fit the container */
+  }
+  
+  
+  
+  .border-dotted-top {
+    border-top: 2px dotted #ddd; /* Adjust color and thickness as needed */
+  }
+  
+  .border-dotted-bottom {
+    border-bottom: 2px dotted #ddd; /* Adjust color and thickness as needed */
+  }
+  
+  
+  
+  
+  /*newwww*/
+  
+  
+  /* In your styles.css or equivalent file */
+  
+  /* ENDDDD */
+  
+  
+  
+  hr {
+    height: 0;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    border-top-width: 1px;
+    /* 3 */
+  }

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <title>Rooms Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/9e0d4e9289.js" crossorigin="anonymous"></script>
+    
+    <link href="rooms.css" rel="stylesheet">
+    <link rel="stylesheet" href="room-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+
+<style>
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.top-header {
+    background-color: #1d2430;
+    color: white;
+    padding: 10px 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.top-header .contact-info {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.top-header .contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+
+}
+
+
+
+
+
+
+
+
+.navbar {
+
+    padding: 10px 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3em;
+flex-wrap: wrap;
+}
+.navbar img {
+    height: 60px;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li {
+    display: inline;
+}
+.navbar ul li a {
+    color: #5f5f61;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+.navbar ul li a:hover {
+    background-color: #f9731d;
+}
+.contact-button {
+    background-color: #f9731d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.cont {
+    height: 10vh;
+    
+ background-size: cover;
+
+ 
+}
+.look {
+    font-family: "Space Grotesk", sans-serif;
+}
+.explore {
+    font-family: "Poppins", sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+</style>
+
+
+    
+</head>
+<body>
+  <div class="top-header look">
+    <div class="contact-info">
+        <span><i class="fa-solid fa-envelope"></i> reservations@AlRahmalodges.com</span>
+        <span><i class="fa-solid fa-phone"></i> +254 712 15 93 02</span>
+        <span><i class="fa-solid fa-tty"></i> +254 7 97 18 28 14</span>
+    </div>
+    <div class="contact-info">
+        <span><i class="fa-brands fa-facebook"></i>facebook</span>
+        <span><i class="fa-brands fa-instagram"></i>instagram</span>
+        <span><i class="fa-solid fa-person"></i>TripAdvisor</span>
+    </div>
+</div>
+
+  <!-- section1 -->
+  <div class="cont ">
+    <nav class=" explore navbar bg-white">
+        <img src="https://sawelalodges.com/images/logo.png" alt="Sawela Lodge Logo" >
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/about.html">ABOUT US</a></li>
+            <li><a href="/events.html">SPECIAL EVENTS</a></li>
+            <li><a href="/rooms.html">ACCOMMODATIONS</a></li>
+            <li><a href="/otherservices.html">OTHER SERVICES</a></li>
+            <li><a href="#">DINING</a></li>
+            <li><a href="/gallery.html">OUR GALLERY</a></li>
+        </ul>
+        <a href="/contactus.html" class="contact-button">CONTACT US</a>
+        
+    </nav>
+   
+</div>
+
+
+  <!-- section2 -->
+  <div class="relative h-64 "> <!-- Adjust background color as needed -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center space-y-4" >
+        <h1 id="room-name" class="text-white text-4xl font-bold" style="font-weight: 1000;"></h1>
+         <!--FETCH heading from db.json-->
+    
+        
+    </div>
+</div>
+
+
+<div class="bg-white p-6 shadow-md  flex" style="margin-top: 8%; padding: auto;">
+    
+
+
+
+   
+<div>
+  <div class="carousel" style="margin-top: 90px; ">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2013/03/02/01/25/room-89022_640.jpg" alt="Image 1">
+                <div class="carousel-caption"></div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2020/11/24/11/36/bedroom-5772286_640.jpg" alt="Image 2">
+                <div class="carousel-caption"></div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2018/07/31/20/08/interior-3575819_640.jpg" alt="Image 3">
+                <div class="carousel-caption"></div>
+            </div>
+        </div>
+        <a class="carousel-control prev" href="#">&lt;</a>
+        <a class="carousel-control next" href="#">&gt;</a>
+        
+       
+    </div>
+
+    <div style="margin-left: 120px; padding-top: 30px;">
+
+
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 900px;">
+            <h1 id="second-room-name" class="text-3xl font-bold mt-4" style="font-weight: 910; color: #741111;"></h1>
+        
+            <div class="flex justify-center p-9 pt-6 gap-7">
+                <a href="#facebook"
+                  class="block font-sans text-2xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400">
+                  <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#twitter"
+                  class="block font-sans text-2xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400">
+                  <i
+                    class="fab fa-twitter" aria-hidden="true">
+                  </i>
+                </a>
+                <a href="#linkedin" 
+                class="block font-sans text-2xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="#pinterest"
+                class="block font-sans text-2xl antialiased font-normal leading-relaxed text-transparent bg-clip-text bg-gradient-to-tr from-red-600 to-red-400">
+                <i class="fab fa-pinterest" aria-hidden="true"></i>
+                </a>
+              </div>
+
+        </div>
+        
+
+
+    <!-- stars -->
+<div class="flex items-center" style="margin-top: 10px; margin-bottom: 30px;">
+    <svg class="w-5 h-5 text-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" style="color: #f9731d;">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <svg class="w-5 h-5 text-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" style="color: #f9731d;">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <svg class="w-5 h-5 text-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" style="color: #f9731d;">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <svg class="w-5 h-5 text-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" style="color: #f9731d;">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <svg class="w-5 h-5 ms-1 text-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" style="color: #f9731d;">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+</div>
+
+<h1 id="second-room-name" class="text-2xl  mt-4" style="font-weight: 910; color: #741111;">OVERVIEW AND AMENITIES</h1>
+<ul style="font-size: 18px; padding-top: 15px;">
+    <li ><b>Meals:</b>Full Board</li>
+    <li style="padding-top: 15px;"><b>Babies:</b> Below 4 Years     </li>
+    <li style="padding-top: 15px;"><b>Number of Adults:</b> 3 Max</li>
+    <li style="padding-top: 15px;"><b>Children:</b> 4 - 12 Years </li>
+    <li style="padding-top: 15px;"><b>Adult:</b> 13 Years and Above</li>
+</ul>
+
+
+    <div id="room-description" style="font-size: 18px;"></div> 
+    <p style="width: 900px; font-size: 18px;">The spacious rooms feature an in-room private safe, a state-of-the-art bathroom with both shower and bathtub options, a sofa convertible bed in the sitting room, flat screen TV, coffee/tea maker and other facilities.
+        Guests have access to interconnecting rooms and a balcony facing the lush green gardens.</p>
+
+        <div style="width: 1000px; padding-top: 30px;">
+            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-gray-200 rounded-lg" style="width: 300px; padding: 14px;">
+                <i class="fas fa-bed" style="padding-right: 10px;"></i> King Size Bed
+            </button>
+            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-gray-200 rounded-lg " style="width: 300px; padding: 14px;">
+                <i class="fas fa-wifi" style="padding-right: 10px;"></i> Wifi
+            </button>
+            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-gray-200 rounded-lg " style="width: 300px; padding: 14px;">
+                <i class="fas fa-tv" style="padding-right: 10px;"></i> Television
+            </button>
+            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-gray-200 rounded-lg " style="width: 300px; padding: 14px;">
+                <i class="fas fa-bath" style="padding-right: 10px;"></i> Hot Water
+            </button>
+            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-gray-200 rounded-lg " style="width: 300px; padding: 14px;">
+                <i class="fas fa-utensils" style="padding-right: 10px;"></i> Dinner
+            </button>
+            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-gray-200 rounded-lg " style="width: 300px; padding: 14px;">
+                <i class="fas fa-concierge-bell" style="padding-right: 10px;"></i> Quick Service
+            </button>
+            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-gray-200 rounded-lg " style="width: 300px; padding: 14px;">
+                <i class="fas fa-tshirt" style="padding-right: 10px;"></i> Laundry Service
+            </button>
+            <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-gray-200 rounded-lg " style="width: 300px; padding: 14px;">
+                <i class="fas fa-taxi" style="padding-right: 10px;"></i> Airport Taxi
+            </button>
+        </div>
+        
+    </div>
+
+
+    
+</div>
+
+<!--Section2-->
+<div class="p-6" style="background-color: #E6E6E6; width: 500px; margin-top: 90px;">
+    <div class="max-w-lg mx-auto p-8 rounded-lg shadow-md" style="background-color: #E6E6E6;">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">BOOKING FORM</h2>
+
+        <form id="bookingForm">
+            <!-- Check In -->
+            <div class="mb-4">
+                <label class="block font-semibold mb-2" for="checkIn" style="color: #f9731d;">CHECK IN</label>
+                <input type="date" id="checkIn" name="checkIn" class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200" style="background-color: #F1F1F1;" />
+            </div>
+
+            <!-- Check Out -->
+            <div class="mb-4">
+                <label class="block font-semibold mb-2" for="checkOut" style="color: #f9731d;">CHECK OUT</label>
+                <input type="date" id="checkOut" name="checkOut" class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200" style="background-color: #F1F1F1;" />
+            </div>
+
+            <!-- Number of Guests -->
+            <div class="mb-4">
+                <label class="block font-semibold mb-2" for="guests" style="color: #f9731d;">NUMBER OF GUESTS</label>
+                <select id="guests" name="guests" class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200" style="background-color: #F1F1F1;">
+                    <option value="">Select Number of Guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                </select>
+            </div>
+
+            <!-- Accommodation/Type of Room -->
+            <div class="mb-4">
+                <label class="block font-semibold mb-2" for="roomType" style="color: #f9731d;">ACCOMMODATION/TYPE OF ROOM</label>
+                <select id="roomType" name="roomType" class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200" style="background-color: #F1F1F1;">
+                    <option value="">Select Room Type</option>
+                    <option value="Superior Room">Superior Room</option>
+                    <option value="Business suite Rooms">Business suite Rooms</option>
+                    <option value="Delux Rooms">Delux Rooms</option>
+                    <option value="Honeymoon Suite Rooms">Honeymoon Suite Rooms</option>
+                    <option value="Executive Suite Rooms">Executive Suite Rooms</option>
+                </select>
+            </div>
+
+            <!-- Full Names -->
+            <div class="mb-4">
+                <label class="block font-semibold mb-2" for="fullName" style="color: #f9731d;">FULL NAMES</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name" class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200" style="background-color: #F1F1F1;" />
+            </div>
+
+            <!-- Phone Number -->
+            <div class="mb-4">
+                <label class="block font-semibold mb-2" for="phoneNumber" style="color: #f9731d;">PHONE NUMBER</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Your phone number" class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200" style="background-color: #F1F1F1;" />
+            </div>
+
+            <!-- Email Address -->
+            <div class="mb-4">
+                <label class="block font-semibold mb-2" for="emailAddress" style="color: #f9731d;">EMAIL ADDRESS</label>
+                <input type="email" id="emailAddress" name="emailAddress" placeholder="Your email address" class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200" style="background-color: #F1F1F1;" />
+            </div>
+
+            <!-- Additional Information -->
+            <div class="mb-4">
+                <label class="block font-semibold mb-2" for="additionalInfo" style="color: #f9731d;">ADDITIONAL INFORMATION</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Any additional requests or information" class="block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-200" style="background-color: #F1F1F1;"></textarea>
+            </div>
+
+            <!-- Error Message -->
+            <div id="error-message" class="text-red-500 mb-4"></div>
+
+            <!-- Submit Button -->
+            <div>
+                <button type="submit" class="w-full text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200" style="background-color: #f9731d;">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+<!-- section3 -->
+<div class="relative h-64" style="background-color: #240909; text-align: center;"> <!-- Background color set to #240909 -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center space-y-4">
+        <h1 class="text-white text-4xl font-bold text-center">BEAUTIFUL VIEW OF <span style="color: tomato;"> AL-RAHMA LODGES</span></h1>
+        <br>
+        <p class="text-white text-center max-w-lg" style="width: 70%; font-size: 18px;">Explore our diverse selection of rooms at Al-Rahma Lodges, each offering a unique and beautiful view. Discover the perfect accommodation for your stay and enjoy a memorable experience with us.</p>
+    </div>
+  </div>
+
+
+
+    
+      
+<!-- section4 -->
+
+
+<!-- section5 -->
+
+<div class="image-roll-container">
+  <img src="https://sawelalodges.com/images/gallery/gallery20.jpg" alt="Image 1">
+  <img src="https://sawelalodges.com/images/gallery/gallery4.jpg" alt="Image 2">
+  <img src="https://sawelalodges.com/images/gallery/gallery5.jpg" alt="Image 3">
+  <img src="https://sawelalodges.com/images/gallery/gallery7.jpg" alt="Image 4">
+  <img src="https://sawelalodges.com/images/gallery/gallery17.jpg" alt="Image 5">
+  <img src="https://sawelalodges.com/images/gallery/gallery3.jpg" alt="Image 6">
+  <img src="https://sawelalodges.com/images/gallery/gallery19.jpg" alt="Image 7">
+  <img src="https://sawelalodges.com/images/gallery/gallery6.jpg" alt="Image 8">
+  <img src="https://sawelalodges.com/images/gallery/gallery10.jpg" alt="Image 9">
+</div>
+
+
+
+
+<section>
+ 
+  <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div>
+                  <h4 class="text-lg font-bold mb-4">Al-Rahma lodge</h4>
+                  <p>Alrahma-Lodge is a booking tool that lets you easily reserve lodge rooms and obtain quick approval from your gues</p>
+              </div>
+              <div>
+                  <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="hover:text-gray-300">Features</a></li>
+                      <li><a href="#" class="hover:text-gray-300">Pricing</a></li>
+                      <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="hover:text-gray-300">support@yourapp.com</a></li>
+                      <li><a href="#" class="hover:text-gray-300">+1-555-123-4567</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                  <div class="flex space-x-4">
+                      <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook fa-lg"></i></a>
+                      <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter fa-lg"></i></a>
+                      <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram fa-lg"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="text-center mt-8">
+              <p>© 2023 Al-Rahma Lodge. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+    
+
+</section>
+
+
+<script src="room-details.js"></script>
+
+</body>
+</html>

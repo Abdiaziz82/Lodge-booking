@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+<style>
+   
+
+
+
+
+   body {
+       margin: 0;
+       font-family: Arial, sans-serif;
+   }
+   .top-header {
+       background-color: #1d2430;
+       color: white;
+       padding: 10px 220px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       flex-wrap: wrap;
+   }
+   .top-header .contact-info {
+       display: flex;
+       gap: 30px;
+       flex-wrap: wrap;
+   }
+   .top-header .contact-info span {
+       display: flex;
+       align-items: center;
+       gap: 5px;
+     
+   
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   .navbar {
+   
+       padding: 10px 260px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding-top: 3em;
+   flex-wrap: wrap;
+   }
+   .navbar img {
+       height: 60px;
+   }
+   .navbar ul {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+       display: flex;
+       gap: 20px;
+   }
+   .navbar ul li {
+       display: inline;
+   }
+   .navbar ul li a {
+       color: white;
+       text-decoration: none;
+       padding: 5px 10px;
+       transition: background-color 0.3s;
+   }
+   .navbar ul li a:hover {
+       background-color: #f9731d;
+   }
+   .contact-button {
+       background-color: #f9731d;
+       color: white;
+       padding: 10px 20px;
+       text-decoration: none;
+       border-radius: 5px;
+   }
+   .cont {
+       height: 100vh;
+       background-image: url(https://cdn.pixabay.com/photo/2014/07/05/08/21/pool-384573_1280.jpg);
+    background-size: cover;
+   
+    
+   }
+   .look {
+       font-family: "Space Grotesk", sans-serif;
+   }
+   .explore {
+       font-family: "Poppins", sans-serif;
+   font-weight: 800;
+   font-style: normal;
+   }
+    
+      
+    </style>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="top-header look">
+        <div class="contact-info">
+            <span><i class="fa-solid fa-envelope"></i> reservations@AlRahmalodges.com</span>
+            <span><i class="fa-solid fa-phone"></i> +254 712 15 93 02</span>
+            <span><i class="fa-solid fa-tty"></i> +254 7 97 18 28 14</span>
+        </div>
+        <div class="contact-info">
+            <span><i class="fa-brands fa-facebook"></i>facebook</span>
+            <span><i class="fa-brands fa-instagram"></i>instagram</span>
+            <span><i class="fa-solid fa-person"></i>TripAdvisor</span>
+        </div>
+    </div>
+<div class="cont">
+    <nav class=" explore navbar">
+        <img src="https://sawelalodges.com/images/logo.png" alt="Sawela Lodge Logo">
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="/events.html">SPECIAL EVENTS</a></li>
+            <li><a href="/rooms.html">ACCOMMODATIONS</a></li>
+            <li><a href="/otherservices.html">OTHER SERVICES</a></li>
+            <li><a href="#">DINING</a></li>
+            <li><a href="/gallery.html">OUR GALLERY</a></li>
+        </ul>
+        <a href="/contactus.html" class="contact-button">CONTACT US</a>
+        
+    </nav>
+    
+    <div class="bg-gray-100">
+        <div class="container mx-auto px-4 py-8">
+            <h1 class="look text-4xl font-bold text-center mb-8">Explore Our beautiful gallery</h1>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <!-- Large item -->
+                <div class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2021/12/11/07/59/hotel-6862159_1280.jpg" alt="Nature" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h3 class="text-2xl font-bold text-white">Explore Nature</h3>
+                            <p class="text-white">Discover the beauty of the natural world</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Two small items -->
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxmb29kfGVufDB8MHx8fDE3MjEwNDI2MTR8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Food" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Culinary Delights</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2019/05/28/00/15/indoors-4234071_1280.jpg" alt="Technology" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Tech Innovations</h4>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Three medium items -->
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2021/08/27/01/33/bedroom-6577523_960_720.jpg" alt="Travel" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Travel Adventures</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_960_720.jpg" alt="Art" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Artistic Expressions</h4>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- bottom cards -->
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxzd2ltbWluZ3xlbnwwfDB8fHwxNzIxMDQzMjkxfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Sport" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Swimming</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2017/06/13/22/41/hotel-2400364_1280.jpg" alt="Sport" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Chess</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2023/03/29/10/27/hotel-7885138_1280.jpg" alt="Sport" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Football</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/07/19/12/hotel-928937_960_720.jpg" alt="Sport" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Cricket</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-100">
+        <div class="container mx-auto px-4 py-8">
+         
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <!-- Large item -->
+                <div class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2021/12/11/07/59/hotel-6862159_1280.jpg" alt="Nature" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h3 class="text-2xl font-bold text-white">Explore Nature</h3>
+                            <p class="text-white">Discover the beauty of the natural world</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Two small items -->
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxmb29kfGVufDB8MHx8fDE3MjEwNDI2MTR8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Food" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Culinary Delights</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2019/05/28/00/15/indoors-4234071_1280.jpg" alt="Technology" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Tech Innovations</h4>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Three medium items -->
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2021/08/27/01/33/bedroom-6577523_960_720.jpg" alt="Travel" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Travel Adventures</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/17/09/28/hotel-1831072_960_720.jpg" alt="Art" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Artistic Expressions</h4>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- bottom cards -->
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwyfHxzd2ltbWluZ3xlbnwwfDB8fHwxNzIxMDQzMjkxfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Sport" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Swimming</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2017/06/13/22/41/hotel-2400364_1280.jpg" alt="Sport" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Chess</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2023/03/29/10/27/hotel-7885138_1280.jpg" alt="Sport" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Football</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="https://cdn.pixabay.com/photo/2015/09/07/19/12/hotel-928937_960_720.jpg" alt="Sport" class="w-full h-48 object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <h4 class="text-xl font-bold text-white">Cricket</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+   
+
+</body>
+</html>

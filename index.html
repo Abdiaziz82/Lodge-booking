@@ -1,0 +1,798 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>our lodge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/9e0d4e9289.js" crossorigin="anonymous"></script>
+
+    <script type="module">
+        import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+      
+        const keenSlider = new KeenSlider(
+          '#keen-slider',
+          {
+            loop: true,
+            slides: {
+              origin: 'center',
+              perView: 1.25,
+              spacing: 16,
+            },
+            breakpoints: {
+              '(min-width: 1024px)': {
+                slides: {
+                  origin: 'auto',
+                  perView: 2.5,
+                  spacing: 32,
+                },
+              },
+            },
+          },
+          []
+        )
+      
+        const keenSliderPrevious = document.getElementById('keen-slider-previous')
+        const keenSliderNext = document.getElementById('keen-slider-next')
+      
+        keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
+        keenSliderNext.addEventListener('click', () => keenSlider.next())
+      </script>
+       <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+    <style>
+   
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.top-header {
+    background-color: #1d2430;
+    color: white;
+    padding: 10px 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.top-header .contact-info {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.top-header .contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+
+}
+
+
+
+
+
+
+
+
+.navbar {
+
+    padding: 10px 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3em;
+flex-wrap: wrap;
+}
+.navbar img {
+    height: 60px;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li {
+    display: inline;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+.navbar ul li a:hover {
+    background-color: #f9731d;
+}
+.contact-button {
+    background-color: #f9731d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.cont {
+    height: 100vh;
+    background-image: url(https://cdn.pixabay.com/photo/2014/07/05/08/21/pool-384573_1280.jpg);
+ background-size: cover;
+
+ 
+}
+.look {
+    font-family: "Space Grotesk", sans-serif;
+}
+.explore {
+    font-family: "Poppins", sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+ 
+    </style>
+</head>
+<body>
+
+    <div class="top-header look">
+        <div class="contact-info">
+            <span><i class="fa-solid fa-envelope"></i> reservations@AlRahmalodges.com</span>
+            <span><i class="fa-solid fa-phone"></i> +254 712 15 93 02</span>
+            <span><i class="fa-solid fa-tty"></i> +254 7 97 18 28 14</span>
+        </div>
+        <div class="contact-info">
+            <span><i class="fa-brands fa-facebook"></i>facebook</span>
+            <span><i class="fa-brands fa-instagram"></i>instagram</span>
+            <span><i class="fa-solid fa-person"></i>TripAdvisor</span>
+        </div>
+    </div>
+<div class="cont">
+    <nav class=" explore navbar">
+        <img src="https://sawelalodges.com/images/logo.png" alt="Sawela Lodge Logo">
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/about.html">ABOUT US</a></li>
+            <li><a href="/events.html">SPECIAL EVENTS</a></li>
+            <li><a href="/rooms.html">ACCOMMODATIONS</a></li>
+            <li><a href="/otherservices.html">OTHER SERVICES</a></li>
+            <li><a href="#">DINING</a></li>
+            <li><a href="/gallery.html">OUR GALLERY</a></li>
+        </ul>
+        <a href="/contactus.html" class="contact-button">CONTACT US</a>
+        
+    </nav>
+    <div class="pt-32 max-w-6xl px-4 mx-auto md:max-w-4xl sm:max-w-2xl sm:px-6">
+        <div class="text-center">
+            <h1
+                class="max-w-md mx-auto text-3xl font-extrabold tracking-normal text-gray-100 sm:text-3xl md:text-5xl lg:text-6xl md:leading-none sm:max-w-xl md:max-w-2xl lg:max-w-4xl">
+                <span class="block look">We look forward to <span style="color: #f9731d;">welcoming</span> you inside soon </span></h1>
+            <h2
+                class=" explore max-w-md px-12 mx-auto mt-3 font-normal text-gray-200 text-md sm:mt-5 sm:text-md md:mt-5 md:text-xl sm:max-w-xl md:max-w-xl">
+
+                Alrahma-Lodge is a booking tool that lets you easily reserve lodge rooms and obtain quick approval from your guests.
+            </h2>
+            <div class="max-w-md mx-auto mt-5 sm:flex sm:justify-center md:mt-8">
+                <div class="rounded-full shadow">
+                   <a href="/rooms.html" <button type="button" class="look flex items-center justify-center w-full px-8 py-3 text-base font-normal text-white bg-[#1d2430]  border border-transparent rounded-full text-md hover:bg-[#f9731d] md:py-4 md:text-2xl md:px-10">Explore Our Rooms</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="bg-[#0c2747] text-[#fdb913] h-[70vh]"  >
+
+    <div class="flex justify-center items-center h-full ">
+
+
+      <div class="container flex justify-center items-center h-full">
+        <div class="w-4/5 max-w-screen-lg bg-[#0c2747] p-8">
+            <h2 class="explore text-center text-xl font-bold mb-6">MAKE RESERVATIONS</h2>
+        
+            <form id="bookingForm" class="space-y-4">
+                <div class="look grid grid-cols-1 md:grid-cols-6 gap-4">
+                    <div class="relative col-span-6 md:col-span-2">
+                        <label for="checkin" class="block text-sm mb-2">CHECK IN</label>
+                        <input type="date" id="checkin" name="checkin" class="w-full p-2 border rounded bg-white text-black" placeholder="Check In">
+                    </div>
+                    <div class="relative col-span-6 md:col-span-2">
+                        <label for="checkout" class="block text-sm mb-2">CHECK OUT</label>
+                        <input type="date" id="checkout" name="checkout" class="w-full p-2 border rounded bg-white text-black" placeholder="Check Out">
+                    </div>
+                    <div class="relative col-span-6 md:col-span-2">
+                        <label for="fullname" class="block text-sm mb-2">FULL NAMES</label>
+                        <input type="text" id="fullname" name="fullname" class="w-full p-2 border rounded bg-white text-black" placeholder="Full Names">
+                    </div>
+                    <div class="relative col-span-6 md:col-span-2">
+                        <label for="phone" class="block text-sm mb-2">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" class="w-full p-2 border rounded bg-white text-black" placeholder="Phone Number">
+                    </div>
+                    <div class="relative col-span-6 md:col-span-2">
+                        <label for="email" class="block text-sm mb-2">EMAIL ADDRESS</label>
+                        <input type="email" id="email" name="email" class="w-full p-2 border rounded bg-white text-black" placeholder="Email Address">
+                    </div>
+                    <div class="relative col-span-6 md:col-span-2">
+                        <label for="guests" class="block text-sm mb-2">NO. OF GUESTS</label>
+                        <select id="guests" name="guests" class="w-full p-2 border rounded bg-white text-black">
+                            <option value="">Select Number of Guests</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <textarea name="additional-info" id="additional-info" rows="4" class="w-full p-2 border rounded bg-white text-black" placeholder="Additional Information"></textarea>
+                </div>
+                <div class="explore text-center">
+                    <p class="text-xs mb-2">BOOKING TENTATIVE UNTIL CONFIRMED</p>
+                    <button type="submit" class="px-6 py-2 bg-transparent border border-[#fdb913] text-[#fdb913] rounded hover:bg-[#fdb913] hover:text-[#0c2747]">
+                        SEND MESSAGE
+                    </button>
+                </div>
+            </form>
+            <div id="error" class="error"></div>
+        </div>
+    </div>
+    </div>
+
+    
+</section>
+<section>
+    <section class="py-10 bg-white sm:py-16 lg:py-24">
+        <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
+                
+    
+                <div>
+                    <h2 class="color look text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-3xl">The Lodge. <span style="color: #f9731d;">Rooms</span>. Dining. <span style="color: #f9731d;">Events</span> & Banqueting</h2>
+                    <p class="look mt-4 text-base leading-relaxed text-gray-600">Relax in Beautiful, Natural Luxury With a variety of recreational activities to choose from, Sawela Lodge in Naivasha, Kenya is one of the region’s best choices in safari lodges or hotels. The name means “comfort in a bird’s nest” something we deliver every day.
+
+                        Sawela Lodge is 90 minutes’ drive from Nairobi, Kenya (85 Kilometres). Our hotel offers guests a variety of activities, from an organic Swimming pool for both adults, large lawns for football and other contact sports, Volleyball and Netball pitches, A kids play area, Bicycles, Boating, Lawn Racket Ball, a guided nature walk and lastly the SAWELA TRAIL, which gives you the opportunity to blow off steam during your stay</p>
+                        <button type="button" class="mt-8 px-8 py-3 font-semibold border rounded dark:border-gray-800 dark:text-gray-800 bg-[#f9731d]">Read more >></button>
+                </div>
+                <div class="pr-12 sm:pr-0 pl-36 ">
+                    <div class="relative max-w-xs mb-12 pb-16 ">
+                        <img style="height: 300px;" class="object-bottom rounded-md" src="https://cdn.pixabay.com/photo/2020/04/11/00/31/botswana-5028276_960_720.jpg" alt="" />
+    
+                        <img style="height: 300px;" class="absolute origin-bottom-right scale-75 rounded-md -bottom-32 -right-12" src="https://img.freepik.com/free-photo/photorealistic-wooden-house-with-timber-structure_23-2151302660.jpg?t=st=1724492614~exp=1724496214~hmac=54ca476d3afc11d29a28fd0c6b8a72eff43583c55ddc20f5bcc0a8fd808285fc&w=996" alt="" />
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</section>
+
+<section class="bg-gray-900 pr-56">
+    <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
+      <div class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
+        <h2 class=" look max-w-xl text-4xl font-bold tracking-tight text-gray-300 sm:text-5xl">
+          Read trusted reviews from our customers
+        </h2>
+  
+        <div class="mt-8 flex gap-4 lg:mt-0">
+          <button
+            aria-label="Previous slide"
+            id="keen-slider-previous"
+            class="rounded-full border border-[#fdb913] p-3 text-white transition hover:bg-[#f9731d] hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5 rtl:rotate-180"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+          </button>
+  
+          <button
+            aria-label="Next slide"
+            id="keen-slider-next"
+            class="rounded-full border border-[#fdb913] p-3 text-white transition hover:bg-[#f9731d] hover:text-white"
+          >
+            <svg
+              class="size-5 rtl:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 5l7 7-7 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+      <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+        <div id="keen-slider" class="keen-slider">
+          <div class="keen-slider__slide">
+            <blockquote
+              class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+            >
+              <div>
+                <div class="flex gap-0.5 text-[#1d2430]">
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+  
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+  
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+  
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+  
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+  
+                <div class="mt-4">
+                  <p class="explore text-2xl font-bold text-[#f9731d] sm:text-3xl">Stayin' Alive</p>
+  
+                  <p class="look mt-4 leading-relaxed text-gray-700">
+                    Our stay at Alrahma Lodge was simply amazing! The serene environment and the exceptional service made our trip unforgettable. The rooms were clean and comfortable, and the staff went above and beyond to ensure we had everything we needed. We'll definitely be coming back!"
+                  </p>
+                </div>
+              </div>
+  
+              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                &mdash; William Ruto
+              </footer>
+            </blockquote>
+          </div>
+  
+          <div class="keen-slider__slide">
+            <blockquote
+              class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+            >
+              <div>
+                <div class="flex gap-0.5 text-[#1d2430]">
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+  
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+  
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+  
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+  
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+  
+                <div class="mt-4">
+                  <p class="explore text-2xl font-bold text-[#f9731d] sm:text-3xl">Stayin' Alive</p>
+  
+                  <p class="look mt-4 leading-relaxed text-gray-700">
+                    Alrahma Lodge is a hidden gem! From the moment we arrived, we felt at home. The lodge is beautifully maintained, and the attention to detail in every aspect is impressive. The hospitality was top-notch, and the staff were incredibly friendly and accommodating. I highly recommend this place for anyone looking to relax and unwind.
+                  </p>
+                </div>
+              </div>
+  
+              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                &mdash; Hassan Abdi
+              </footer>
+            </blockquote>
+          </div>
+  
+          <div class="keen-slider__slide">
+            <blockquote
+              class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+            >
+              <div>
+                <div class="flex gap-0.5 text-[#1d2430]">
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+  
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+  
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+  
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+  
+                  <svg
+                    class="size-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+  
+                <div class="mt-4">
+                  <p class="explore font-bold text-[#f9731d] sm:text-3xl">Stayin' Alive</p>
+  
+                  <p class="look leading-relaxed text-gray-700">
+                    Staying at Alrahma Lodge was the highlight of our trip. The location is perfect, offering stunning views and a peaceful atmosphere. The rooms were spacious and well-equipped, and the food was delicious. The staff were always ready to assist with a smile. We'll be telling all our friends about this wonderful lodge!
+                  </p>
+                </div>
+              </div>
+  
+              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                &mdash; Samantha fredrick
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="pt-20 lg:pt-[120px] pb-10 lg:pb-20" style="margin: 120px;">
+    <div class="container">
+       <div class="flex flex-wrap justify-center -mx-4">
+          <div class="w-full px-4">
+             <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
+                <span class="explore font-semibold text-3xl text-[#f9731d] mb-2 block">
+                 Events, Meetings & Conferences
+ 
+                </span>
+                <h2
+                   class="look
+                   font-bold
+                   text-3xl
+                   sm:text-4xl
+                   md:text-[40px]
+                   text-dark
+                   mb-4
+                   "
+                   >
+                   Our venue spaces
+                </h2>
+                <p class="explore text-base text-body-color">
+                 Our venue spaces are perfect for romantic weddings, catered meetings, and international conferences. State of the art facilities to suit your individual needs and a dedicated coordinator to take care of all your needs.
+                </p>
+             </div>
+          </div>
+       </div>
+       <div class="flex flex-wrap -mx-4">
+          <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+             <div class="max-w-[370px] mx-auto mb-10">
+                <div class="rounded overflow-hidden mb-8">
+                   <img
+                      src="https://cdn.tailgrids.com/1.0/assets/images/blogs/blog-01/image-01.jpg"
+                      alt="image"
+                      class="w-full"
+                      />
+                </div>
+                <div>
+                   <span
+                      class="
+                      bg-[#f9731d]
+                      rounded
+                      inline-block
+                      text-center
+                      py-1
+                      px-4
+                      text-xs
+                      leading-loose
+                      font-semibold
+                      text-white
+                      mb-5
+                      "
+                      >
+                   Dec 22, 2023
+                   </span>
+                   <h3>
+                      <a
+                         href="javascript:void(0)"
+                         class="look
+                         font-semibold
+                         text-xl
+                         sm:text-2xl
+                         lg:text-xl
+                         xl:text-2xl
+                         mb-4
+                         inline-block
+                         text-dark
+                         hover:text-[#f9731d]
+                         "
+                         >
+                         Wedding Grounds, Events & Venues At Al-RahmaLodges
+                      </a>
+                   </h3>
+                   <p class="text-base text-body-color">
+                     Experience is everything, and our wedding planners create truly personal, memorable occasions. With the best green grounds to be found on the shores of Naivasha...
+                   </p>
+                </div>
+             </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+             <div class="max-w-[370px] mx-auto mb-10">
+                <div class="rounded overflow-hidden mb-8">
+                   <img
+                      src="https://cdn.tailgrids.com/1.0/assets/images/blogs/blog-01/image-02.jpg"
+                      alt="image"
+                      class="w-full"
+                      />
+                </div>
+                <div>
+                   <span
+                      class="
+                      bg-[#f9731d]
+                      rounded
+                      inline-block
+                      text-center
+                      py-1
+                      px-4
+                      text-xs
+                      leading-loose
+                      font-semibold
+                      text-white
+                      mb-5
+                      "
+                      >
+                   Mar 15, 2023
+                   </span>
+                   <h3>
+                      <a
+                         href="javascript:void(0)"
+                         class="look
+                         font-semibold
+                         text-xl
+                         sm:text-2xl
+                         lg:text-xl
+                         xl:text-2xl
+                         mb-4
+                         inline-block
+                         text-dark
+                         hover:text-[#f9731d]
+                         "
+                         >
+                         Meetings & Conferences Venues At Al-Rahma Lodge
+                      </a>
+                   </h3>
+                   <p class="text-base text-body-color">
+                    Al-Rahma Kenya offers unique hotel conference facilities and venues in Naivasha, from seminars to conferences and accommodation at our exclusive lodge in Naivasha.
+                   </p>
+                </div>
+             </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+             <div class="max-w-[370px] mx-auto mb-10">
+                <div class="rounded overflow-hidden mb-8">
+                   <img
+                      src="https://cdn.tailgrids.com/1.0/assets/images/blogs/blog-01/image-03.jpg"
+                      alt="image"
+                      class="w-full"
+                      />
+                </div>
+                <div>
+                   <span
+                      class="
+                      bg-[#f9731d]
+                      rounded
+                      inline-block
+                      text-center
+                      py-1
+                      px-4
+                      text-xs
+                      leading-loose
+                      font-semibold
+                      text-white
+                      mb-5
+                      "
+                      >
+                   Jan 05, 2023
+                   </span>
+                   <h3>
+                      <a
+                         href="javascript:void(0)"
+                         class="look
+                         font-semibold
+                         text-xl
+                         sm:text-2xl
+                         lg:text-xl
+                         xl:text-2xl
+                         mb-4
+                         inline-block
+                         text-dark
+                         hover:text-[#f9731d]
+                         "
+                         >
+                         Team Building Grounds, Venue & Activities
+                      </a>
+                   </h3>
+                   <p class="text-base text-body-color">
+                     Al-Rahma in Naivasha, Kenya has the perfect venue for your team-building programs.Take advantage of our experience with inspiring activities, test initiatives, practical abilities
+                   </p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <!-- ====== Blog Section End -->
+ 
+ 
+
+
+<section>
+ 
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Al-Rahma lodge</h4>
+                    <p>Alrahma-Lodge is a booking tool that lets you easily reserve lodge rooms and obtain quick approval from your gues</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-300">Features</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Pricing</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-300">support@yourapp.com</a></li>
+                        <li><a href="#" class="hover:text-gray-300">+1-555-123-4567</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <p>© 2023 Al-Rahma Lodge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+      
+
+</section>
+</body>
+
+<script src="/index.js"></script>
+</html>

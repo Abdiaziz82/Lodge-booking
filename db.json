@@ -1,0 +1,170 @@
+{
+  "rooms": [
+    {
+      "image": "https://cdn.pixabay.com/photo/2020/10/18/09/16/bedroom-5664221_640.jpg",
+      "name": "SUPERIOR ROOMS",
+      "description": "Our luxurious superior rooms are cozy, well-furnished, and ideal for avid travelers. Located near the reception area...",
+      "rating": 4,
+      "price": "Ksh 10000 per night",
+      "id": "a14d"
+    },
+    {
+      "image": "https://cdn.pixabay.com/photo/2019/06/02/12/27/apartment-4246371_640.jpg",
+      "name": "BUSINESS SUITE ROOMS",
+      "description": "Our unique business suite room category allows you to combine business travel and a family vacation. A sliding door separates...",
+      "rating": 5,
+      "price": "Ksh 15000 per night",
+      "id": "5b4a"
+    },
+    {
+      "image": "https://cdn.pixabay.com/photo/2013/03/02/01/25/room-89022_640.jpg",
+      "name": "EXECUTIVE SUITE ROOMS",
+      "description": "Located near the main block, the luxurious two-bedroom suites feature a state-of-the-art lounge, a fully equipped kitchenette...",
+      "rating": 3,
+      "price": "Ksh 10000 per night",
+      "id": "d3c5"
+    },
+    {
+      "image": "https://cdn.pixabay.com/photo/2020/11/24/11/36/bedroom-5772286_640.jpg",
+      "name": "HONEYMOON SUITE ROOM",
+      "description": "Designed for the ultimate 5-star honeymoon experience, the honeymoon suite is situated in our last block. Here, honeymooners enjoy...",
+      "rating": 4,
+      "price": "Ksh 20000 per night",
+      "id": "b7f7"
+    },
+    {
+      "image": "https://cdn.pixabay.com/photo/2018/07/31/20/08/interior-3575819_640.jpg",
+      "name": "DELUXE ROOMS",
+      "description": "Deluxe rooms with beautiful views and modern amenities...",
+      "rating": 5,
+      "price": "Ksh 8000 per night",
+      "id": "90a3"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "b1c8",
+      "checkIn": "2024-09-04",
+      "checkOut": "2024-09-12",
+      "guests": "1",
+      "roomType": "single",
+      "fullName": "amir",
+      "phoneNumber": "02891818",
+      "emailAddress": "amirjuma036@gmail.com",
+      "additionalInfo": "savvc"
+    },
+    {
+      "id": "9a1c",
+      "checkIn": "2024-09-05",
+      "checkOut": "2024-09-19",
+      "guests": "2",
+      "roomType": "suite",
+      "fullName": "vax",
+      "phoneNumber": "220000221",
+      "emailAddress": "ami@gmail.com",
+      "additionalInfo": "sde"
+    },
+    {
+      "id": "a0af",
+      "checkIn": "2024-09-12",
+      "checkOut": "2024-09-15",
+      "guests": "2",
+      "roomType": "Delux Rooms",
+      "fullName": "laon",
+      "phoneNumber": "02891818",
+      "emailAddress": "ali@gmail.com",
+      "additionalInfo": "was"
+    },
+    {
+      "id": "fb5b",
+      "checkIn": "2024-09-05",
+      "checkOut": "2024-09-19",
+      "guests": "4",
+      "roomType": "Delux Rooms",
+      "fullName": "amir",
+      "phoneNumber": "999999",
+      "emailAddress": "ali@gmail.com",
+      "additionalInfo": "swedwdede"
+    },
+    {
+      "id": "bf70",
+      "checkIn": "2024-09-06",
+      "checkOut": "2024-09-13",
+      "guests": "2",
+      "roomType": "Honeymoon Suite Rooms",
+      "fullName": "halima",
+      "phoneNumber": "2008782",
+      "emailAddress": "hali@gmail.com",
+      "additionalInfo": "i was withyuou"
+    },
+    {
+      "id": "386a",
+      "checkIn": "2024-09-18",
+      "checkOut": "2024-09-05",
+      "guests": "2",
+      "roomType": "Business suite Rooms",
+      "fullName": "Abdi aziz",
+      "phoneNumber": "0712159302",
+      "emailAddress": "abdiaziz@gmail.com",
+      "additionalInfo": "wwwwwwwwwwwwwwwwwwww"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "06b9",
+      "checkIn": "2024-09-04",
+      "checkOut": "2024-09-19",
+      "guests": "03",
+      "fullName": "sav",
+      "phoneNumber": "2323",
+      "emailAddress": "hamisi@gmail.com",
+      "additionalInfo": "was"
+    },
+    {
+      "id": "1725482927578",
+      "checkIn": "2024-09-04",
+      "checkOut": "2024-09-12",
+      "guests": "03",
+      "fullName": "amiy",
+      "phoneNumber": "23242423",
+      "emailAddress": "asmi@gmail.com",
+      "additionalInfo": "cassasas"
+    },
+    {
+      "id": "1725607046663",
+      "checkIn": "2024-09-06",
+      "checkOut": "2024-09-21",
+      "guests": "04",
+      "fullName": "Anwar",
+      "phoneNumber": "202762",
+      "emailAddress": "anwar@gmail.com",
+      "additionalInfo": "i am with her"
+    }
+  ],
+  "messages": [
+    {
+      "id": "3541",
+      "name": "amir",
+      "email": "hamisi@gmail.com",
+      "phone": "23242423",
+      "room": "32",
+      "message": "wes"
+    },
+    {
+      "id": "0e39",
+      "name": "toddler baby",
+      "email": "amirosmankiayi516@gmail.com",
+      "phone": "23242423",
+      "room": "20",
+      "message": "kali"
+    },
+    {
+      "id": "1eed",
+      "name": "amir",
+      "email": "amirjuma6@gmail.com",
+      "phone": "5343435",
+      "room": "56",
+      "message": "rf"
+    }
+  ]
+}

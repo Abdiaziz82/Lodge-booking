@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <title>Rooms</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/9e0d4e9289.js" crossorigin="anonymous"></script>
+    
+    <link href="rooms.css" rel="stylesheet">
+    
+
+<style>
+
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.top-header {
+    background-color: #1d2430;
+    color: white;
+    padding: 10px 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.top-header .contact-info {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.top-header .contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  
+
+}
+
+
+
+
+
+
+
+
+.navbar {
+
+    padding: 10px 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3em;
+flex-wrap: wrap;
+}
+.navbar img {
+    height: 60px;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li {
+    display: inline;
+}
+.navbar ul li a {
+    color: #5f5f61;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+.navbar ul li a:hover {
+    background-color: #f9731d;
+}
+.contact-button {
+    background-color: #f9731d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.cont {
+    height: 10vh;
+    
+ background-size: cover;
+
+ 
+}
+.look {
+    font-family: "Space Grotesk", sans-serif;
+}
+.explore {
+    font-family: "Poppins", sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+</style>
+
+
+    
+</head>
+<body>
+  <div class="top-header look">
+    <div class="contact-info">
+        <span><i class="fa-solid fa-envelope"></i> reservations@AlRahmalodges.com</span>
+        <span><i class="fa-solid fa-phone"></i> +254 712 15 93 02</span>
+        <span><i class="fa-solid fa-tty"></i> +254 7 97 18 28 14</span>
+    </div>
+    <div class="contact-info">
+        <span><i class="fa-brands fa-facebook"></i>facebook</span>
+        <span><i class="fa-brands fa-instagram"></i>instagram</span>
+        <span><i class="fa-solid fa-person"></i>TripAdvisor</span>
+    </div>
+</div>
+
+  <!-- section1 -->
+  <div class="cont ">
+    <nav class=" explore navbar bg-white">
+        <img src="https://sawelalodges.com/images/logo.png" alt="Sawela Lodge Logo" >
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/about.html">ABOUT US</a></li>
+            <li><a href="/events.html">SPECIAL EVENTS</a></li>
+            <li><a href="/rooms.html">ACCOMMODATIONS</a></li>
+            <li><a href="/otherservices.html">OTHER SERVICES</a></li>
+            <li><a href="#">DINING</a></li>
+            <li><a href="/gallery.html">OUR GALLERY</a></li>
+        </ul>
+        <a href="/contactus.html" class="contact-button">CONTACT US</a>
+        
+    </nav>
+   
+</div>
+
+
+  <!-- section2 -->
+  <div class="relative h-64 "> <!-- Adjust background color as needed -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center space-y-4" >
+        <h1 class="text-white text-4xl font-bold" style="font-weight: 1000;">ROOM LISTING</h1>
+        <h2 class="text-white text-xl font-bold"><span style="color: rgb(238, 51, 19);">Home </span> | Room Listing</h2>
+    </div>
+</div>
+
+  
+<!-- section3 -->
+<div class="bg-white p-6 shadow-md  flex" style="margin-top: 8%;"> <!-- Flexbox container -->
+
+  <!-- Left Side Content -->
+  <div class="left" style="flex: 1; margin-left: 80px; padding-top: 90px;"> 
+    <h1 style="color: rgb(102, 20, 6); font-weight: 900; font-size: 23px; padding-bottom: 20px;">ROOM TYPES</h1>
+
+    <div class="flex items-center mb-4">
+      <input id="checkbox-single" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+      <label for="checkbox-single" class="ms-2 text-sm font-medium" style="color: tomato; padding-left: 10px;">Single Rooms</label>
+    </div>
+    <div class="flex items-center mb-4">
+      <input id="checkbox-double" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+      <label for="checkbox-double" class="ms-2 text-sm font-medium" style="color: tomato; padding-left: 10px;">Double Rooms</label>
+    </div>
+    <div class="flex items-center mb-4">
+      <input id="checkbox-presidential" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+      <label for="checkbox-presidential" class="ms-2 text-sm font-medium" style="color: tomato; padding-left: 10px;">Presidential Rooms</label>
+    </div>
+    <div class="flex items-center mb-4">
+      <input id="checkbox-interconnecting" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+      <label for="checkbox-interconnecting" class="ms-2 text-sm font-medium" style="color: tomato; padding-left: 10px;">Interconnecting Rooms</label>
+    </div>
+
+    <h1 style="color: rgb(102, 20, 6); font-weight: 900; font-size: 23px; padding-bottom: 20px;">RATINGS</h1>
+
+    <div class="flex items-center mb-4">
+      <input id="checkbox-ratings" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+      <div class="flex items-center">
+        <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" style="color: tomato;">
+          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+        </svg>
+        <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" style="color: tomato;">
+          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+        </svg>
+        <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" style="color: tomato;">
+          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+        </svg>
+        <svg class="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" style="color: tomato;">
+          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+        </svg>
+        <svg class="w-4 h-4 ms-1 text-gray-300 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20" style="color: tomato;">
+          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+        </svg>
+      </div>
+    </div>
+
+    <h1 style="color: rgb(102, 20, 6);font-weight: 900; font-size: 23px; padding-bottom: 20px;">SERVICES</h1>
+
+  
+
+    <div class="flex items-center mb-4 ">
+      <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 ">
+      <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300 " style="color: tomato; padding-left: 10px;">24/7 Reception</label>
+    </div>
+    <div class="flex items-center mb-4">
+      <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded pl-2 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+      <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300" style="color: tomato; padding-left: 10px;">Parking</label>
+    </div>
+    <div class="flex items-center mb-4">
+      <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded pl-2 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+      <label for="default-checkbox" class="ms-2  text-sm font-medium text-gray-900 dark:text-gray-300" style="color: tomato; padding-left: 10px;">Bar</label>
+    </div>
+    <div class="flex items-center" style="padding-bottom: 10px;">
+      <input  id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded pl-2 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+      <label for="default-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300" style="color: tomato; padding-left: 10px;">Restaurant</label>
+    </div>
+  
+  
+  
+  
+  
+  
+    </div>
+
+  <!-- Right Side Content -->
+  <div id="cards-container" class="right-side" style="flex: 1; margin-left: -400px; padding-top: 90px; margin-right: 100px;">
+    <!-- my card from javascript -->
+  </div>
+  
+
+</div>
+
+ 
+
+    
+      
+<!-- section4 -->
+<div class="relative h-64" style="background-color: #240909; text-align: center;"> <!-- Background color set to #240909 -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center space-y-4">
+      <h1 class="text-white text-4xl font-bold text-center">BEAUTIFUL VIEW OF <span style="color: tomato;"> AL-RAHMA LODGES</span></h1>
+      <br>
+      <p class="text-white text-center max-w-lg" style="width: 70%;">Explore our diverse selection of rooms at Al-Rahma Lodges, each offering a unique and beautiful view. Discover the perfect accommodation for your stay and enjoy a memorable experience with us.</p>
+  </div>
+</div>
+
+<!-- section5 -->
+
+<div class="image-roll-container">
+  <img src="https://sawelalodges.com/images/gallery/gallery20.jpg" alt="Image 1">
+  <img src="https://sawelalodges.com/images/gallery/gallery4.jpg" alt="Image 2">
+  <img src="https://sawelalodges.com/images/gallery/gallery5.jpg" alt="Image 3">
+  <img src="https://sawelalodges.com/images/gallery/gallery7.jpg" alt="Image 4">
+  <img src="https://sawelalodges.com/images/gallery/gallery17.jpg" alt="Image 5">
+  <img src="https://sawelalodges.com/images/gallery/gallery3.jpg" alt="Image 6">
+  <img src="https://sawelalodges.com/images/gallery/gallery19.jpg" alt="Image 7">
+  <img src="https://sawelalodges.com/images/gallery/gallery6.jpg" alt="Image 8">
+  <img src="https://sawelalodges.com/images/gallery/gallery10.jpg" alt="Image 9">
+</div>
+
+
+
+
+<section>
+ 
+  <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div>
+                  <h4 class="text-lg font-bold mb-4">Al-Rahma lodge</h4>
+                  <p>Alrahma-Lodge is a booking tool that lets you easily reserve lodge rooms and obtain quick approval from your gues</p>
+              </div>
+              <div>
+                  <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="hover:text-gray-300">Features</a></li>
+                      <li><a href="#" class="hover:text-gray-300">Pricing</a></li>
+                      <li><a href="#" class="hover:text-gray-300">Blog</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                  <ul class="space-y-2">
+                      <li><a href="#" class="hover:text-gray-300">support@yourapp.com</a></li>
+                      <li><a href="#" class="hover:text-gray-300">+1-555-123-4567</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                  <div class="flex space-x-4">
+                      <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook fa-lg"></i></a>
+                      <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter fa-lg"></i></a>
+                      <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram fa-lg"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="text-center mt-8">
+              <p>© 2023 Al-Rahma Lodge. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+    
+
+</section>
+
+<script src="rooms.js"></script>
+
+</body>
+</html>

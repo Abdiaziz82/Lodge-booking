@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking and Reservation Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #f9731d;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f9731d;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr.completed {
+            text-decoration: line-through;
+            color: #aaa;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+
+        .messages {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Booking Information</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Check In</th>
+                <th>Check Out</th>
+                <th>Guests</th>
+                <th>Room Type</th>
+                <th>Full Name</th>
+                <th>Phone Number</th>
+                <th>Email Address</th>
+                <th>Additional Info</th>
+            </tr>
+        </thead>
+        <tbody id="bookingTableBody">
+            <!-- Booking data will be inserted here -->
+        </tbody>
+    </table>
+    
+    <div class="section">
+        <h2>Reservation Information</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Check In</th>
+                    <th>Check Out</th>
+                    <th>Guests</th>
+                    <th>Full Name</th>
+                    <th>Phone Number</th>
+                    <th>Email Address</th>
+                    <th>Additional Info</th>
+                </tr>
+            </thead>
+            <tbody id="reservationTableBody">
+                <!-- Reservation data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section messages">
+        <h2>Messages</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>phoneNumber</th>
+                    <th>Room</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody id="messagesTableBody">
+                <!-- Messages data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="error" class="error"></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        fetchData();
+    });
+
+    function fetchData() {
+        // Fetch data for bookings and reservations
+        fetch('db.json')
+            .then(response => response.json())
+            .then(data => {
+                const bookings = data.bookings;
+                const reservations = data.reservations;
+
+                // Populate bookings table
+                const bookingTableBody = document.getElementById('bookingTableBody');
+                if (bookings && bookings.length > 0) {
+                    bookings.forEach(booking => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${booking.id}</td>
+                            <td>${booking.checkIn}</td>
+                            <td>${booking.checkOut}</td>
+                            <td>${booking.guests}</td>
+                            <td>${booking.roomType}</td>
+                            <td>${booking.fullName}</td>
+                            <td>${booking.phoneNumber}</td>
+                            <td>${booking.emailAddress}</td>
+                            <td>${booking.additionalInfo}</td>
+                        `;
+                        row.addEventListener('click', () => {
+                            row.classList.toggle('completed');
+                        });
+                        bookingTableBody.appendChild(row);
+                    });
+                } else {
+                    document.getElementById('error').textContent = 'No bookings available.';
+                }
+
+                // Populate reservations table
+                const reservationTableBody = document.getElementById('reservationTableBody');
+                if (reservations && reservations.length > 0) {
+                    reservations.forEach(reservation => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${reservation.id}</td>
+                            <td>${reservation.checkIn}</td>
+                            <td>${reservation.checkOut}</td>
+                            <td>${reservation.guests}</td>
+                            <td>${reservation.fullName}</td>
+                            <td>${reservation.phoneNumber}</td>
+                            <td>${reservation.emailAddress}</td>
+                            <td>${reservation.additionalInfo}</td>
+                        `;
+                        row.addEventListener('click', () => {
+                            row.classList.toggle('completed');
+                        });
+                        reservationTableBody.appendChild(row);
+                    });
+                } else {
+                    document.getElementById('error').textContent = 'No reservations available.';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+                document.getElementById('error').textContent = 'There was an error fetching the information. Please try again later.';
+            });
+
+        // Fetch messages
+        fetch('http://localhost:3000/messages')
+            .then(response => response.json())
+            .then(messages => {
+                const messagesTableBody = document.getElementById('messagesTableBody');
+                if (messages && messages.length > 0) {
+                    messages.forEach(message => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${message.name}</td>
+                            <td>${message.email}</td>
+                            <td>${message.phone}</td>
+                            <td>${message.room}</td>
+                            <td>${message.message}</td>
+                        `;
+                        messagesTableBody.appendChild(row);
+                    });
+                } else {
+                    const noMessagesRow = document.createElement('tr');
+                    noMessagesRow.innerHTML = `<td colspan="2">No messages available.</td>`;
+                    messagesTableBody.appendChild(noMessagesRow);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching messages:', error);
+                document.getElementById('error').textContent = 'There was an error fetching messages. Please try again later.';
+            });
+    }
+</script>
+
+</body>
+</html>
